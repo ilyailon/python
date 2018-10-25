@@ -13,7 +13,7 @@ import numpy
 
 
 config = {
-    'vk_acces_token': 'd638e6091a2063d729e6114a70850df4760487797f770694e5af975d4b55b8259a57cc481ae8d92ac6b07',
+    'vk_access_token': 'd638e6091a2063d729e6114a70850df4760487797f770694e5af975d4b55b8259a57cc481ae8d92ac6b07',
     'plotly_name': 'ilyailon',
     'plotly_key': 'RE7pthU48DxmSOwOHntL'
 }
@@ -46,7 +46,7 @@ def get_friends(user_id, fields):
 
     query_params = {
         'domain': "https://api.vk.com/method",
-        'access_token': config['vk_acces_token'],
+        'access_token': config['vk_access_token'],
         'user_id': user_id,
         'fields': fields
     }
@@ -96,7 +96,7 @@ def messages_get_history(user_id, offset=0, count=20):
 
     query_params = {
         'domain': "https://api.vk.com/method",
-        'access_token': config['vk_acces_token'],
+        'access_token': config['vk_access_token'],
         'user_id': user_id,
         'offset': offset
     }
